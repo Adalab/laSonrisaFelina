@@ -1,0 +1,14 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(77, 77, 77, 0.5);
+  height: 95px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.opacity {
+  background-color: #4d4d4d;
+  transition: 1s linear;
+  }
