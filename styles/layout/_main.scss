@@ -1,0 +1,113 @@
+/* Turn off parallax scrolling for tablets and phones */
+
+.img_background1,
+.img_background2,
+.img_background3,
+.img_background4,
+.img_background5,
+.img_background6 {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.img_background1 {
+  background-image: url(../images/gat6.jpg);
+  min-height: 100%;
+}
+
+.img_background2 {
+  background-image: url(../images/gat2.jpg);
+  min-height: $bg-img;
+}
+
+.img_background3 {
+  background-image: url(../images/gat5.jpg);
+  min-height: $bg-img;
+}
+
+.img_background4 {
+  background-image: url(../images/gat3.jpg);
+  min-height: $bg-img;
+}
+
+.img_background5 {
+  background-image: url(../images/gat1.jpg);
+  min-height: $bg-img;
+}
+
+.img_background6 {
+  background-image: url(../images/gat5.jpg);
+  min-height: $bg-img;
+}
+
+.text-container{
+  position:relative;
+}
+
+.text-container-style{
+  text-align:center;
+  padding:$padding-container;
+  text-align: justify;
+}
+
+.who-container{
+  color:$bg-span;
+  background-color:$who-bg-color;
+}
+
+.what-container{
+  color:$bg-span;
+  background-color:$what-bg-color;
+}
+
+.help-container{
+  color:$bg-span;
+  background-color:$help-bg-color;
+}
+
+.calc-container{
+  color:$bg-span;
+  background-color:$calc-bg-color;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: $span-text-color;
+}
+
+.caption span.border {
+  background-color: $bg-span;
+  color: $span-text-color;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+@media (min-device-width: $min-size-mobile){
+  .img_background1,
+  .img_background2,
+  .img_background3,
+  .img_background4,
+  .img_background5,
+  .img_background6 {
+  background-attachment: fixed;
+  }
+
+  .caption span.border {
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+}
