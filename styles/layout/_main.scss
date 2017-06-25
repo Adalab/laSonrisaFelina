@@ -14,7 +14,6 @@
   background-size: cover;
 }
 
-
 .img_background1 {
   background-image: url(../images/gat6.jpg);
   min-height: 100%;
@@ -93,6 +92,11 @@
   font-size: 18px;
   letter-spacing: 4px;
 }
+.blank{
+  position: relative;
+  height: 0;
+  bottom: 71px;
+}
 
 @media (min-device-width: $min-size-mobile){
   .img_background1,
@@ -101,7 +105,7 @@
   .img_background4,
   .img_background5,
   .img_background6 {
-  background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   .caption span.border {
