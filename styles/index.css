@@ -157,6 +157,9 @@ body, html {
   text-decoration: none;
   color: #f29400; }
 
+.up-image {
+  width: 100%; }
+
 @media (min-width: 768px) {
   .logoDiv {
     width: 10%; } }
@@ -359,7 +362,16 @@ header {
 .blank {
   position: relative;
   height: 0;
-  bottom: 71px; }
+  bottom: 45px; }
+
+.up-page {
+  width: 50px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 98; }
 
 @media (min-device-width: 768px) {
   .img_background1,
@@ -373,6 +385,9 @@ header {
   .caption span.border {
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 10px; } }
+    letter-spacing: 10px; }
+
+  .up-page {
+    width: 65px; } }
 
 /*# sourceMappingURL=index.css.map */

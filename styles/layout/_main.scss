@@ -44,32 +44,32 @@
   min-height: $bg-img;
 }
 
-.text-container{
+.text-container {
   position:relative;
 }
 
-.text-container-style{
+.text-container-style {
   text-align:center;
   padding:$padding-container;
   text-align: justify;
 }
 
-.who-container{
+.who-container {
   color:$bg-span;
   background-color:$who-bg-color;
 }
 
-.what-container{
+.what-container {
   color:$bg-span;
   background-color:$what-bg-color;
 }
 
-.help-container{
+.help-container {
   color:$bg-span;
   background-color:$help-bg-color;
 }
 
-.calc-container{
+.calc-container {
   color:$bg-span;
   background-color:$secundary-color;
   padding: 40px;
@@ -92,10 +92,21 @@
   font-size: 18px;
   letter-spacing: 4px;
 }
-.blank{
+
+.blank {
   position: relative;
   height: 0;
-  bottom: 71px;
+  bottom: 45px;
+}
+
+.up-page {
+  width: 50px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right:10px;
+  cursor: pointer;
+  z-index: 98;
 }
 
 @media (min-device-width: $min-size-mobile){
@@ -112,6 +123,10 @@
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+  }
+
+  .up-page{
+    width: 65px;
   }
 
 }

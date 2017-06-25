@@ -80,3 +80,20 @@ function alarmMlProduct(){
 function alarmMgDose(){
   mgDoseElement.classList.remove("alarm");
 }
+
+//Flecha subir arriba
+$(document).ready(function(){
+	$('.up-page').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 1000);
+	});
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.up-page').fadeIn(300);
+		} else {
+			$('.up-page').fadeOut(300);
+		}
+	});
+})
