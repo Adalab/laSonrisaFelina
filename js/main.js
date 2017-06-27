@@ -1,7 +1,6 @@
 "use strict";
 var navMobile = document.getElementById("js-navMobile");
 var navShow = document.getElementById("js-navShow");
-var principalSectionsTitle = document.getElementById("js-principal-section-title");
 
 navMobile.addEventListener("click", mobile);
 function mobile() {
@@ -18,10 +17,8 @@ window.addEventListener("scroll", changeOpacity);
 function changeOpacity(){
   if(document.body.scrollTop > header.offsetHeight){
     header.classList.add("opacity");
-    principalSectionsTitle .classList.add("principal-section-title-display");
   }else{
     header.classList.remove("opacity");
-    principalSectionsTitle .classList.remove("principal-section-title-display");
   }
 }
 

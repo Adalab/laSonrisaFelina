@@ -52,7 +52,6 @@
 .text-container-style{
   text-align:center;
   padding:$padding-container;
-  text-align: justify;
 }
 
 .who-container{
@@ -72,40 +71,67 @@
   padding: 40px;
 }
 
-.association-name{
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  color: $text-color;
-}
+// .association-name{
+//   position: absolute;
+//   top: 25%;
+//   width: 100%;
+//   text-align: center;
+//   color: $text-color;
+// }
+// .principal-section-title{
+//   position: absolute;
+//   top: 90%;
+//   width: 100%;
+//   display: none;
+//   justify-content: center;
+//   text-align: center;
+//   color: $text-color;
+// }
+// .principal-section-title-display{
+//   display: flex;
+// }
+//
+// .secondary-section-title{
+//   position: absolute;
+//   top: 90%;
+//   width: 100%;
+//   justify-content: center;
+//   text-align: center;
+//   color: $text-color;
+// }
+//
+// .border {
+//   background-color: $bg-span;
+//   color: $text-color;
+//   padding: 10px;
+//   font-size: 18px;
+// }
 .principal-section-title{
   position: absolute;
-  top: 90%;
+  top: 50%;
   width: 100%;
-  display: none;
   justify-content: center;
   text-align: center;
-  color: $text-color;
+  font-family: $secondary-font;
 }
-.principal-section-title-display{
-  display: flex;
-}
+
 
 .secondary-section-title{
   position: absolute;
-  top: 90%;
+  top: 50%;
   width: 100%;
   justify-content: center;
   text-align: center;
-  color: $text-color;
 }
 
 .border {
+  display: inline-block;
+  font-family: $secondary-font;
   background-color: $bg-span;
   color: $text-color;
-  padding: 10px;
+  padding: 10px 25px;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 
@@ -149,11 +175,23 @@
     background-attachment: fixed;
   }
 
-  .caption span.border {
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
+  .border {
+   display: inline-block;
+   font-family: $secondary-font;
+   background-color: $bg-span;
+   color: $text-color;
+   padding: 10px 25px;
+   font-size: 25px;
+   text-transform: uppercase;
+ }
+
+ .secondary-section-title{
+   position: absolute;
+   top: 40%;
+   width: 100%;
+   justify-content: center;
+   text-align: center;
+ }
 
   .up-page{
     width: 65px;

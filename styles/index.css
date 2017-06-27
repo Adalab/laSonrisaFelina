@@ -333,8 +333,7 @@ header {
 
 .text-container-style {
   text-align: center;
-  padding: 50px 50px;
-  text-align: justify; }
+  padding: 50px 50px; }
 
 .who-container {
   background-color: #f3f9f8; }
@@ -346,44 +345,33 @@ header {
   background-color: #4D4D4D;
   padding: 40px; }
 
-.association-name {
-  position: absolute;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  color: #f29400; }
-
 .principal-section-title {
   position: absolute;
-  top: 90%;
+  top: 50%;
   width: 100%;
-  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: #f29400; }
-
-.principal-section-title-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  font-family: "Artifika", serif; }
 
 .secondary-section-title {
   position: absolute;
-  top: 90%;
+  top: 50%;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  color: #f29400; }
+  text-align: center; }
 
 .border {
+  display: inline-block;
+  font-family: "Artifika", serif;
   background-color: #0a0a0a;
   color: #f29400;
-  padding: 10px;
-  font-size: 18px; }
+  padding: 10px 25px;
+  font-size: 18px;
+  text-transform: uppercase; }
 
 .sections {
   display: -webkit-box;
@@ -425,10 +413,23 @@ header {
   .img_background6 {
     background-attachment: fixed; }
 
-  .caption span.border {
-    padding: 18px;
+  .border {
+    display: inline-block;
+    font-family: "Artifika", serif;
+    background-color: #0a0a0a;
+    color: #f29400;
+    padding: 10px 25px;
     font-size: 25px;
-    letter-spacing: 10px; }
+    text-transform: uppercase; }
+
+  .secondary-section-title {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
 
   .up-page {
     width: 65px; } }
