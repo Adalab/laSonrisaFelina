@@ -1,5 +1,8 @@
 .logoDiv{
+  display: flex;
+  align-items: center;
   width: 20%;
+  margin: 10px;
 }
 
 .logo-lsf{
@@ -7,6 +10,7 @@
 }
 
 .icon-fb{
+  display: block;
   width: 100%;
 }
 
