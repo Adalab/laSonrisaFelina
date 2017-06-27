@@ -1,0 +1,43 @@
+.footer{
+ background-color: #4d4d4d;
+ color: #ff8b0d;
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ font-family: 'Signika Negative', sans-serif;
+ font-size:  0.7em;
+ padding-top: 10px;
+}
+
+.contact{
+ width: 100%;
+ text-align: center;
+}
+
+.follow-us{
+  width: 100%;
+}
+
+.follow{
+  margin-top: 0px;
+  text-align: center;
+}
+
+.fb{
+  width: 3%;
+  margin-top: 18px;
+}
+
+@media (min-width: 735px) {
+
+.fb{
+ width: 2%;
+}
+}
+
+@media (min-width: 1024px) {
+
+.fb{
+ width: 1.3%;
+}
+}
