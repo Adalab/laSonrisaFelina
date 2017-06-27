@@ -293,10 +293,7 @@ header {
 /* Turn off parallax scrolling for tablets and phones */
 .img_background1,
 .img_background2,
-.img_background3,
-.img_background4,
-.img_background5,
-.img_background6 {
+.img_background3 {
   background-attachment: scroll;
   background-repeat: no-repeat;
   position: relative;
@@ -305,45 +302,16 @@ header {
   background-size: cover; }
 
 .img_background1 {
-  background-image: url(../images/gat1.jpg);
+  background-image: url(../images/gat1n.jpg);
   min-height: 100%; }
 
 .img_background2 {
-  background-image: url(../images/gat2.jpg);
+  background-image: url(../images/gat5n.jpg);
   min-height: 400px; }
 
 .img_background3 {
-  background-image: url(../images/gat3.jpg);
+  background-image: url(../images/gat6n.jpg);
   min-height: 400px; }
-
-.img_background4 {
-  background-image: url(../images/gat4.jpg);
-  min-height: 400px; }
-
-.img_background5 {
-  background-image: url(../images/gat5.jpg);
-  min-height: 400px; }
-
-.img_background6 {
-  background-image: url(../images/gat6.jpg);
-  min-height: 400px; }
-
-.text-container {
-  position: relative; }
-
-.text-container-style {
-  text-align: center;
-  padding: 50px 50px; }
-
-.who-container {
-  background-color: #f3f9f8; }
-
-.help-container {
-  background-color: #f3f9f8; }
-
-.calc-container {
-  background-color: #4D4D4D;
-  padding: 40px; }
 
 .principal-section-title {
   position: absolute;
@@ -355,6 +323,13 @@ header {
   text-align: center;
   font-family: "Artifika", serif; }
 
+.text-container {
+  position: relative;
+  padding: 18px 18px;
+  font-family: "Signika Negative", sans-serif;
+  background-color: #f9f6f3;
+  font-size: 18px; }
+
 .secondary-section-title {
   position: absolute;
   top: 50%;
@@ -364,6 +339,10 @@ header {
           justify-content: center;
   text-align: center; }
 
+.calc-container {
+  background-color: #4D4D4D;
+  padding: 40px; }
+
 .border {
   display: inline-block;
   font-family: "Artifika", serif;
@@ -372,23 +351,6 @@ header {
   padding: 10px 25px;
   font-size: 18px;
   text-transform: uppercase; }
-
-.sections {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-
-.style-sections {
-  background-color: #f3f9f8;
-  color: #f29400;
-  padding: 10px;
-  font-size: 18px; }
 
 .blank {
   position: relative;
@@ -407,10 +369,7 @@ header {
 @media (min-device-width: 768px) {
   .img_background1,
   .img_background2,
-  .img_background3,
-  .img_background4,
-  .img_background5,
-  .img_background6 {
+  .img_background3 {
     background-attachment: fixed; }
 
   .border {
@@ -432,7 +391,11 @@ header {
     text-align: center; }
 
   .up-page {
-    width: 65px; } }
+    width: 65px; }
+
+  .text-container {
+    padding: 50px 50px;
+    text-align: justify; } }
 .footer {
   background-color: #4d4d4d;
   color: #ff8b0d;
