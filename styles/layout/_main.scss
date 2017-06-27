@@ -14,8 +14,9 @@
   background-size: cover;
 }
 
+
 .img_background1 {
-  background-image: url(../images/gat6.jpg);
+  background-image: url(../images/gat1.jpg);
   min-height: 100%;
 }
 
@@ -25,72 +26,101 @@
 }
 
 .img_background3 {
-  background-image: url(../images/gat5.jpg);
-  min-height: $bg-img;
-}
-
-.img_background4 {
   background-image: url(../images/gat3.jpg);
   min-height: $bg-img;
 }
 
-.img_background5 {
-  background-image: url(../images/gat1.jpg);
+.img_background4 {
+  background-image: url(../images/gat4.jpg);
   min-height: $bg-img;
 }
 
-.img_background6 {
+.img_background5 {
   background-image: url(../images/gat5.jpg);
   min-height: $bg-img;
 }
 
-.text-container {
+.img_background6 {
+  background-image: url(../images/gat6.jpg);
+  min-height: $bg-img;
+}
+
+.text-container{
   position:relative;
 }
 
-.text-container-style {
+.text-container-style{
   text-align:center;
   padding:$padding-container;
   text-align: justify;
 }
 
-.who-container {
-  color:$bg-span;
-  background-color:$who-bg-color;
+.who-container{
+
+  background-color:$sections-bg-color;
 }
 
-.what-container {
-  color:$bg-span;
-  background-color:$what-bg-color;
+
+
+.help-container{
+
+  background-color:$sections-bg-color;
 }
 
-.help-container {
-  color:$bg-span;
-  background-color:$help-bg-color;
-}
-
-.calc-container {
-  color:$bg-span;
+.calc-container{
   background-color:$secundary-color;
   padding: 40px;
 }
 
-.caption {
+.association-name{
   position: absolute;
-  left: 0;
-  top: 50%;
+  top: 25%;
   width: 100%;
   text-align: center;
   color: $text-color;
 }
+.principal-section-title{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  text-align: center;
+  color: $text-color;
+}
+.principal-section-title-display{
+  display: flex;
+}
 
-.caption span.border {
+.secondary-section-title{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: $text-color;
+}
+
+.border {
   background-color: $bg-span;
   color: $text-color;
-  text-transform: uppercase;
   padding: 10px;
   font-size: 18px;
-  letter-spacing: 4px;
+}
+
+
+
+.sections{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.style-sections{
+  background-color: $sections-bg-color;
+  color: $text-color;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .blank {
