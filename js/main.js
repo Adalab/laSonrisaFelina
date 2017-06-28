@@ -9,7 +9,7 @@ function mobile() {
 }
 
 var header = document.querySelector(".header");
-var smallMenuLinkList = document.querySelectorAll(".navMobileItems li a");
+var smallMenuLinkList = document.querySelectorAll(".nav-mobile-items li a");
 for (var i = 0; i < smallMenuLinkList.length; i++) {
   smallMenuLinkList[i].addEventListener("click", mobile);
 }

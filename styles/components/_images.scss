@@ -1,32 +1,27 @@
-.logoDiv{
+.logo-div{
   display: flex;
   align-items: center;
   width: 20%;
   margin: 10px;
 }
-
 .logo-lsf{
   width: 100%;
 }
-
-.icon-fb{
+.fb-header{
   display: block;
   width: 100%;
 }
-
 .link-nav{
   width: 10%;
   text-decoration: none;
   color: #f29400;
 }
-
 .up-image{
   width: 100%;
 }
 
-@media (min-width: 768px){
-
-  .logoDiv{
+@media (min-width: $min-size-mobile){
+  .logo-div{
     width: 10%;
   }
 }

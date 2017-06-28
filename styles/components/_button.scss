@@ -8,13 +8,12 @@
   margin-bottom: auto;
   margin-right: 20px;
 }
-
 .navButton span{
   display: block;
   position: absolute;
   height: 16.5%;
   width: 100%;
-  background: #f29400;
+  background: $text-color;
   border-radius: 16.5%;
   opacity: 1;
   left: 0;
@@ -44,7 +43,7 @@
   transform: rotate(-135deg);
 }
 
-@media(min-width: 768px){
+@media(min-width: $min-size-mobile){
   .navButton{
     display: none;
   }

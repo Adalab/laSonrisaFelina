@@ -1,6 +1,11 @@
-.text-title-style{
-  text-align:center;
-  letter-spacing: 5px;
-  font: 20px "Lato", sans-serif;
-  color: #999999;
+.title{
+  font-family: $secondary-font;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+@media (min-device-width: $min-size-mobile){
+.title {
+  font-size: 32px;
+}
 }
