@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>La sonrisa felina</title>
   <link rel="stylesheet" href="styles/index.css">
-  <meta name="viewport" content="width = device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon.png" alt="Logo La sonrisa felina" />
@@ -121,14 +121,14 @@
         </div>
         <form class="converter-form" action="index.html" method="post">
           <div class="converter-products">
-            <input id="mgProduct" class="converter-input converter-product" onkeyup="alarmMgProduct()" type="number" name="number" value="" placeholder="mg">
+            <input id="mgProduct" class="converter-input converter-product" onkeyup="alarmMgProduct()" type="number" name="number" pattern="[0-9]*" inputmode="numeric" placeholder="mg">
             <p class="converter-text product-separation">/</p>
-            <input id="mlProduct" class="converter-input converter-product" onkeyup="alarmMlProduct()" type="number" name="number" value="" placeholder="ml">
+            <input id="mlProduct" class="converter-input converter-product" onkeyup="alarmMlProduct()" type="number" name="number" pattern="[0-9]*" inputmode="numeric" placeholder="ml">
           </div>
           <p class="converter-text">mg /ml que contiene el medicamento</p>
           <p class="converter-text">(ver envase)</p>
-          <input id="catWeight" class="converter-input converter-cat" onkeyup="alarmCatWeight()" type="number" name="number" value="" placeholder="Peso del gato en gr">
-          <input id="mgDose" class="converter-input converter-cat" onkeyup="alarmMgDose()" type="number" name="number" value="" placeholder="mg/Kg (ver posología del medicamento)">
+          <input id="catWeight" class="converter-input converter-cat" onkeyup="alarmCatWeight()" type="number" name="number" pattern="[0-9]*" inputmode="numeric" placeholder="Peso del gato en gr">
+          <input id="mgDose" class="converter-input converter-cat" onkeyup="alarmMgDose()" type="number" name="number" pattern="[0-9]*" inputmode="numeric" placeholder="mg/Kg (ver posología del medicamento)">
 
           <input id="mlResult" class="converter-button converter-btn-hover" type="submit" name="Convertir" value="Obtener la dosis en ml">
 
