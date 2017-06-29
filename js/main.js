@@ -77,9 +77,6 @@ function getMlResult(e){
     }
     modalDose.classList.add("modal-open");
     modalText.innerHTML= ("Por favor, revise los campos");
-    $(".converter-products > input").attr("disabled",true);
-    $(".converter-form > input").attr("disabled",true);
-    $("#mlResult").removeClass("converter-btn-hover");
     }else{
 
     var catWeight = catWeightInput/1000;
@@ -88,6 +85,9 @@ function getMlResult(e){
     modalDose.classList.add("modal-open");
     form.reset();
     }
+    $(".converter-products > input").attr("disabled",true);
+    $(".converter-form > input").attr("disabled",true);
+    $("#mlResult").removeClass("converter-btn-hover");
 };
 resultButton.addEventListener("click", getMlResult);
 
