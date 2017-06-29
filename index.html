@@ -99,19 +99,26 @@
         <div class="converter-info">
           <p class="converter-title">Calculadora de dosis</p>
         </div>
+        <form class="converter-form" action="index.html" method="post">
+          <div class="converter-products">
+            <input id="mgProduct" class="converter-input converter-product" onkeyup="alarmMgProduct()" type="number" name="number" value="" placeholder="mg">
+            <p class="converter-text product-separation">/</p>
+            <input id="mlProduct" class="converter-input converter-product" onkeyup="alarmMlProduct()" type="number" name="number" value="" placeholder="ml">
+          </div>
+          <p class="converter-text">mg /ml que contiene el medicamento</p>
+          <p class="converter-text">(ver envase)</p>
+          <input id="catWeight" class="converter-input converter-cat" onkeyup="alarmCatWeight()" type="number" name="number" value="" placeholder="Peso del gato en gr">
+          <input id="mgDose" class="converter-input converter-cat" onkeyup="alarmMgDose()" type="number" name="number" value="" placeholder="mg/Kg (ver posología del medicamento)">
 
-        <div class="converter">
-          <form class="converter-form" action="index.html" method="post">
+          <input id="mlResult" class="converter-button converter-btn-hover" type="submit" name="Convertir" value="Obtener la dosis en ml">
 
-            <input id="mgProduct" class="converter-input" onkeyup="alarmMgProduct()" type="number" name="number" value="" placeholder="Introduce los mg">
-            <input id="mlProduct" class="converter-input" onkeyup="alarmMlProduct()"type="number" name="number" value="" placeholder="Introduce los ml">
-
-            <input id="mgDose" class="converter-input" onkeyup="alarmMgDose()"type="number" name="number" value="" placeholder="Introduce la dosis en mg">
-            <input id="mlResult" class="converter-button" type="button" name="Convertir" value="Obtener la dosis en ml">
-
-            <p id="resultDose" class="converter-result"> </p>
-          </form>
-        </div>
+          <div id="modalDose" class="modal-wrapper">
+            <div class="modal">
+              <p id="modalText" class="modal-text"></p>
+              <input id="modalInput" class="modal-input" type="button" value="Ok">
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

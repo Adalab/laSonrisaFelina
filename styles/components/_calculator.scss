@@ -5,53 +5,69 @@
   font-size: 1rem;
 }
 
-.converter-title {
-  width: 80%;
-  margin: auto;
-  background-color: $text-color;
-  color: $secundary-color;
-  text-align: center;
-  font-weight: bold;
-}
-
 .converter-form {
-  text-align: center;
   background-color: $secundary-color;
+  margin: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter-products {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.converter-product {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+.product-separation {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.converter-cat{
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .converter-input {
-  width: 80%;
   height: 40px;
-  margin-bottom: 20px;
   padding-left: 10px;
   border: none;
   background-color: #605f5f;
-  color: $text-color;
+  color: $primary-color;
   font-weight: bold;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $text-color;
+    color: $primary-color;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: $text-color;
+   color: $primary-color;
    opacity: 1;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: $text-color;
+   color: $primary-color;
    opacity: 1;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: $text-color;
+   color: $primary-color;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color: $text-color;
+   color: $primary-color;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -64,32 +80,34 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-.converter-button {
-  height: 40px;
-  width: 80%;
-  border: 4px solid $text-color;
-  background-color: $secundary-color;
-  color: orange;
-  font-size: 1.2rem;
-}
-
-.converter-button:hover {
-  background-color: $text-color;
-  border: none;
-  color: white;
-  transition: border linear 0.5s, background-color linear 0.5s, color linear 0.5s;
-}
-
-.converter-result {
-  text-align: center;
-  font-size: 1.2rem;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .alarm {
   border: 2px solid red;
+}
+
+.modal-wrapper {
+  display: none;
+  justify-content: center;
+}
+
+.modal {
+  width: 200px;
+  height: 200px;
+  background-color: $secundary-color;
+  border: 4px solid $primary-color;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 90;
+  top: 30px;
+}
+
+.modal-open {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192,192,192,0.3);
 }
 
 
@@ -98,11 +116,16 @@ input[type=number] {
     width: 60%;
   }
 
-  .converter-title {
-    font-size: 2rem;
+  .converter-form {
+    width: 80%;
   }
 
-  .converter-input:first-child {
-    margin-top: 30px;
+  .converter-products {
+    width: 80%;
   }
+
+  .converter-cat {
+    width: 80%;
+ }
+
 }
