@@ -36,9 +36,7 @@
   font-size: 1.2em;
   text-align: center;
 }
-
-
-@media (min-width: $min-size-mobile){
+@media (min-width: $min-size-mobile) {
   .title {
     font-size: 32px;
   }

@@ -1,27 +1,46 @@
-.logo-div{
+.logo-div {
   display: flex;
   align-items: center;
   width: 20%;
   margin: 10px;
 }
-.logo-lsf{
+
+.logo-lsf {
   width: 100%;
 }
-.fb-header{
+
+.fb-header {
   display: block;
   width: 100%;
 }
-.link-nav{
+
+.link-nav {
   width: 10%;
   text-decoration: none;
   color: #f29400;
 }
-.up-image{
+
+.up-image {
   width: 100%;
 }
 
-@media (min-width: $min-size-mobile){
-  .logo-div{
+.ces-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.ces-image {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-ces-image {
+  width: 100%;
+}
+@media (min-width: $min-size-mobile) {
+  .logo-div {
     width: 10%;
   }
 }

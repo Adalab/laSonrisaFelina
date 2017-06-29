@@ -34,7 +34,7 @@
   margin: 0;
 }
 
-.converter-cat{
+.converter-cat {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -48,36 +48,41 @@
   font-weight: bold;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $primary-color;
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $primary-color;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: $primary-color;
-   opacity: 1;
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $primary-color;
+  opacity: 1;
 }
 
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: $primary-color;
-   opacity: 1;
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $primary-color;
+  opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: $primary-color;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $primary-color;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: $primary-color;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $primary-color;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type=number] {
-    -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .alarm {
@@ -109,9 +114,7 @@ input[type=number] {
   height: 100%;
   background-color: rgba(192,192,192,0.3);
 }
-
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .converter-content {
     width: 60%;
   }
@@ -126,6 +129,5 @@ input[type=number] {
 
   .converter-cat {
     width: 80%;
- }
-
+  }
 }
